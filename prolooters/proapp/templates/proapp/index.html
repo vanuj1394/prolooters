@@ -4,7 +4,10 @@
 <!DOCTYPE HTML>
 <html lang="en">
     <head>
-    {{prod.values.first.title}}
+    <!-- {% for pro in prod %}
+
+       <h8> {{pro.title}} </h8> <br>
+    {% endfor %} -->
     <!-- {% for iteam in prod %}
     <li><h1>{{iteam.title}}</h1></li>
     {% endfor %} -->
@@ -25,8 +28,8 @@
                                 <link href ="{% static 'proapp/plugins/load-more-button.css' %}" rel="stylesheet">
                                 <link href="{% static 'proapp/styles.css' %}" rel="stylesheet">
                                     <style type="text/css">
-                                        .card .card-img{width: 100%; height: 250px;}
-                                        .card .card-img img{width: 100%; height: 100%; object-fit: cover;}
+                                        .card .card-img{width: 100%;}
+                                        .card .card-img img{width: 100%; object-fit: cover;}
                                         .mt-25{margin-top: 25px;}
                                         </style>
                                     
@@ -93,19 +96,26 @@
                     <div class="col-md-12 col-lg-8">
                         <h4 class="p-title"><b>RECENT DEALS</b></h4>
                         <div class="row">
-                            <div class="col-sm-6">
+                        {% for pro in prod|slice:":100" %}
+                            <div class="col-sm-3">
                                 <div class="card">
                                     <div class="card-img">
-                                        <img src="https://images-na.ssl-images-amazon.com/images/I/810FwKHZPML._UX535_.jpg" alt="Avatar">
+                                        <img src= "{{pro.img_src}}" alt="Avatar">
                                             </div>
-                                    <div class="container">
-                                        <a href="https://amzn.to/2TR0AAD"><h4><b>Puma Men's Sneakers
-                                        </b></h4></a>
-                                        <p>@1461 only</p>
-                                    </div>
+                                    
                                 </div>
+                                <div class="container">
+                                        <a href="{{pro.buy_link}}">{{pro.title}}
+                                        <div class="product-price u-textLeft  padding-horizontal-1x ">
+                                           <h4><b> <span class="product-price--value"><span class="sup">₹</span>{{pro.deal_price}}</span></b></h4>
+                                        </div>
+                                        
+                                    </div>
                             </div>
-                            <div class="col-sm-6 grid">
+                        {% endfor %}
+
+
+                            <div class="col-sm-3 grid">
                                 <div class="card">
                                     <div class="card-img">
                                         <img src="https://images-na.ssl-images-amazon.com/images/I/71HOGcYFrDL._SX679_.jpg" alt="Avatar">
@@ -118,7 +128,7 @@
                             </div>
                         </div>
                         <div class="row mt-25 grid" style="display: none;" >
-                            <div class="col-sm-6">
+                            <div class="col-sm-3">
                                 <div class="card">
                                     <div class="card-img">
                                         <img src="https://images-eu.ssl-images-amazon.com/images/I/41ANVAHA0oL._AC_UL260_SR200,260_FMwebp_QL70_.jpg" alt="Avatar">
@@ -209,57 +219,18 @@
                             
                             <div class="mtb-50">
                                 <h4 class="p-title"><b>POPULAR POSTS</b></h4>
-                                <a class="oflow-hidden pos-relative mb-20 dplay-block" href="https://amzn.to/2CmGveg">
-                                    <div class="wh-100x abs-tlr"><img src="https://images-na.ssl-images-amazon.com/images/I/718aNR2qITL._SX679_.jpg" alt=""></div>
+                                {% for pro in prod|slice:":5" %} -->
+                                <a class="oflow-hidden pos-relative mb-20 dplay-block" href="{{pro.buy_link}}">
+                                    <div class="wh-100x abs-tlr"><img src="{{pro.img_src}}" alt=""></div>
                                     <div class="ml-120 min-h-100x">
-                                        <h5><b>Parachute Advansed Coconut Crème Oil, 150 ml with Intense Nourishment Shampoo, 150 ml @175
+                                        <h5><b>{{pro.title}}
                                         </b></h5>
                                         <h6 class="color-lite-black pt-10">by <span class="color-black"><b>Pro Looters,</b></span> Jan 20, 2019</h6>
                                     </div>
                                 </a><!-- oflow-hidden -->
+                                {% endfor %} -->
                                 
-                                <a class="oflow-hidden pos-relative mb-20 dplay-block" href="https://amzn.to/2RM2LYR">
-                                    <div class="wh-100x abs-tlr"><img src="https://images-na.ssl-images-amazon.com/images/I/816ykS4F3OL._UY550_.jpg" alt=""></div>
-                                    <div class="ml-120 min-h-100x">
-                                        <h5><b>Amazon Brand - Symbol Men's Checkered Regular Fit Formal Shirt
-                                            
-                                            @216</b></h5>
-                                        <h6 class="color-lite-black pt-10">by <span class="color-black"><b>Pro Looters,</b></span> Jan 16, 2019</h6>
-                                    </div>
-                                </a><!-- oflow-hidden -->
-                                
-                                <a class="oflow-hidden pos-relative mb-20 dplay-block" href="https://www.amazon.in/dp/B0764M9QVT/ref=as_li_ss_tl?=&linkCode=ll1&tag=parasbansal0b-21&linkId=55b67859a42ac77926ca552367fe23d2&language=en_IN">
-                                    <div class="wh-100x abs-tlr"><img src="https://images-na.ssl-images-amazon.com/images/I/71wdLqbjbsL._SX679_.jpg" alt=""></div>
-                                    <div class="ml-120 min-h-100x">
-                                        <h5><b>Pantene Silky Smooth Care Shampoo, 1L @300</b></h5>
-                                        <h6 class="color-lite-black pt-10">by <span class="color-black"><b>Pro Looters,</b></span> Jan 13, 2019</h6>
-                                    </div>
-                                </a><!-- oflow-hidden -->
-                                
-                                <a class="oflow-hidden pos-relative mb-20 dplay-block" href="https://www.amazon.in/Samsung-Navy-Blue-Storage-Offers/dp/B078WRWJ6P/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=indian007-21&linkId=69c7b9c1a52bd312045bdd40647270a3&language=en_IN">
-                                    <div class="wh-100x abs-tlr"><img src="https://images-na.ssl-images-amazon.com/images/I/61%2B0Np%2B16uL._SY741_.jpg" alt=""></div>
-                                    <div class="ml-120 min-h-100x">
-                                        <h5><b>Samsung C7 Pro (Navy Blue, 4GB RAM, 64GB Storage) with Offers
-                                            @19990</b></h5>
-                                        <h6 class="color-lite-black pt-10">by <span class="color-black"><b>Pro Looters,</b></span> Jan 13, 2019</h6>
-                                    </div>
-                                </a><!-- oflow-hidden -->
-                                
-                            </div><!-- mtb-50 -->
-                            
-                            <div class="mtb-50 pos-relative">
-                                <SCRIPT charset="utf-8" type="text/javascript" src="//ws-in.amazon-adsystem.com/widgets/q?rt=tf_mfw&ServiceVersion=20070822&MarketPlace=IN&ID=V20070822%2FIN%2Fanuj139408-21%2F8001%2Fa225c765-8df1-46c9-b5a9-08f1dae04d25"> </SCRIPT> <NOSCRIPT><A rel="nofollow" HREF="//ws-in.amazon-adsystem.com/widgets/q?rt=tf_mfw&ServiceVersion=20070822&MarketPlace=IN&ID=V20070822%2FIN%2Fanuj139408-21%2F8001%2Fa225c765-8df1-46c9-b5a9-08f1dae04d25&Operation=NoScript">Amazon.in Widgets</A></NOSCRIPT>
-                            </div><!-- mtb-50 -->
-                            
-                            <div class="mtb-50 mb-md-0">
-                                <h4 class="p-title"><b>NEWSLETTER</b></h4>
-                                <p class="mb-20">Subscribe to our newsletter to get notification about new updates,
-                                information, discount, etc..</p>
-                                <form class="nwsltr-primary-1">
-                                    <input type="text" placeholder="Your email"/>
-                                    <button type="submit"><i class="ion-ios-paperplane"></i></button>
-                                </form>
-                            </div><!-- mtb-50 -->
+                                <!-- mtb-50 -->
                             
                         </div><!--  pl-20 -->
                     </div><!-- col-md-3 -->

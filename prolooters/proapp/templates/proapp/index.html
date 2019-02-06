@@ -1,0 +1,369 @@
+{% load staticfiles %}
+
+
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+    {{prod.values.first.title}}
+    <!-- {% for iteam in prod %}
+    <li><h1>{{iteam.title}}</h1></li>
+    {% endfor %} -->
+        <title>Pro Looters</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+                <meta charset="UTF-8">
+                    
+                    <!-- Font -->
+                    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:400,600,700" rel="stylesheet">
+                        
+                        <!-- Stylesheets -->
+                        
+                        <link href="{% static 'proapp/plugins/bootstrap.css' %}" rel="stylesheet">
+                            
+                            <link href="fonts/ionicons.css" rel="stylesheet">
+                                
+                                <link href ="{% static 'proapp/plugins/load-more-button.css' %}" rel="stylesheet">
+                                <link href="{% static 'proapp/styles.css' %}" rel="stylesheet">
+                                    <style type="text/css">
+                                        .card .card-img{width: 100%; height: 250px;}
+                                        .card .card-img img{width: 100%; height: 100%; object-fit: cover;}
+                                        .mt-25{margin-top: 25px;}
+                                        </style>
+                                    
+    </head>
+    <body>
+        
+        <header>
+            <div class="bg-191">
+                <div class="container">
+                    <div class="oflow-hidden color-ash font-9 text-sm-center ptb-sm-5">
+                        
+                        <ul class="float-left float-sm-none list-a-plr-10 list-a-plr-sm-5 list-a-ptb-15 list-a-ptb-sm-10">
+                            <li><a class="pl-0 pl-sm-10" href="#foot">About</a></li>
+                            <li><a href="#foot">Contact</a></li>
+                        </ul>
+                        <ul class="float-right float-sm-none list-a-plr-10 list-a-plr-sm-5 list-a-ptb-15 list-a-ptb-sm-5">
+                            <li><a class="pl-0 pl-sm-10" href="#"><i class="ion-social-facebook"></i></a></li>
+                            <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                            <li><a href="#"><i class="ion-social-google"></i></a></li>
+                            <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                            <li><a href="#"><i class="ion-social-bitcoin"></i></a></li>
+                        </ul>
+                        
+                    </div><!-- top-menu -->
+                </div><!-- container -->
+            </div><!-- bg-191 -->
+            
+            <div class="container">
+                <a class="logo" href="index.html"><h1>Pro Looters</h1></a>
+                
+                <a class="right-area src-btn" href="#" >
+                    <i class="active src-icn ion-search"></i>
+                    <i class="close-icn ion-close"></i>
+                </a>
+                <div class="src-form">
+                    <form>
+                        <input type="text" placeholder="Search here">
+                            <button type="submit"><i class="ion-search"></i></a></button>
+                            </form>
+                </div><!-- src-form -->
+                
+                <a class="menu-nav-icon" data-menu="#main-menu" href="#"><i class="ion-navicon"></i></a>
+                
+                <ul class="main-menu" id="main-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="drop-down"><a href="03_single-post.html">Mobiles<i class="ion-arrow-down-b"></i></a>
+                        <ul class="drop-down-menu drop-down-inner">
+                            <li><a href="https://www.amazon.in/s/ref=nb_sb_noss?url=search-alias%3Delectronics&field-keywords=mobile&rh=n%3A976419031%2Ck%3Amobile">All Mobiles</a></li>
+                            <li><a href="https://www.amazon.in/b/?_encoding=UTF8&node=1389401031&ref_=sv_top_elec_mega_1">Mobile Accessories</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://www.amazon.in/s/ref=nb_sb_noss_2?url=search-alias%3Dcomputers&field-keywords=Computer">Computers</a></li>
+                    <li><a href="https://www.amazon.in/s/ref=nb_sb_noss_2?url=search-alias%3Dcomputers&field-keywords=Laptops&rh=n%3A976392031%2Ck%3ALaptops">Laptops</a></li>
+                    <li><a href="https://www.amazon.in/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=Mens&rh=i%3Aaps%2Ck%3AMens">Mens</a></li>
+                </ul>
+                <div class="clearfix"></div>
+            </div><!-- container -->
+        </header>
+        
+        <section>
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-md-12 col-lg-8">
+                        <h4 class="p-title"><b>RECENT DEALS</b></h4>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="https://images-na.ssl-images-amazon.com/images/I/810FwKHZPML._UX535_.jpg" alt="Avatar">
+                                            </div>
+                                    <div class="container">
+                                        <a href="https://amzn.to/2TR0AAD"><h4><b>Puma Men's Sneakers
+                                        </b></h4></a>
+                                        <p>@1461 only</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 grid">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="https://images-na.ssl-images-amazon.com/images/I/71HOGcYFrDL._SX679_.jpg" alt="Avatar">
+                                            </div>
+                                    <div class="container">
+                                        <a href="https://amzn.to/2VZ4QzI"><h4><b>Lifelong Power Pro 500-Watt Mixer Grinder with 3 Jars (White/Grey)  </b></h4></a>
+                                        <h3><p>@999</p></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-25 grid" style="display: none;" >
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="https://images-eu.ssl-images-amazon.com/images/I/41ANVAHA0oL._AC_UL260_SR200,260_FMwebp_QL70_.jpg" alt="Avatar">
+                                            </div>
+                                    <div class="container">
+                                        <a href="https://www.amazon.in/s/ref=as_li_ss_tl?fst=as:off&rh=n:1571283031,n:!1571284031,n:1983396031,n:1983518031,n:9780814031,p_89:Vans&qid=1546872732&bbn=9780814031&sort=price-asc-rank&linkCode=sl2&tag=ss9716000c-21&linkId=0d5f2eebdd64082ae102a98d3cfb9233&language=en_IN"><h4><b>Vans Sneaker</b></h4></a>
+                                        <p>At 85% discount</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 grid" style="display: none;" >
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="https://images-na.ssl-images-amazon.com/images/I/81mFLiCiuuL._UX535_.jpg" alt="Avatar">
+                                            </div>
+                                    <div class="container">
+                                        <a href="https://www.amazon.in/BATA-Miller-Formal-Shoes-8-8216189/dp/B07BVVZRL2/ref=as_li_ss_tl?psc=1&SubscriptionId=AKIAICFYHFJJNTT27K5A&linkCode=sl1&tag=ss9716000c-21&linkId=d3e4e76af22f2a2416dc792bb369c0e7&language=en_IN"><h4><b>BATA Men's Miller Derby Formal Shoes
+                                        </b></h4></a>
+                                        <p> At rs 554 only </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="loadMore" style="">
+                        <a href="#">Load More</a>
+                        </div>
+                        
+                        <h4 class="p-title mt-30"><b>Beauty Health Grocery</b></h4>
+                        <div class="row">
+                            
+                            <div class="col-sm-6">
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/61ohdwHKRxL._SL1000_.jpg" alt="">
+                                    <h4 class="pt-20"><a href="#"><b>Stayfree Advanced XL All Night Sanitary napkins (28 Count)</b></a></h4>
+                                    <p>at rs 199 only</p> <br>
+                                    </div><!-- col-sm-6 -->
+                            
+                            <div class="col-sm-6">
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/811Bf7qxaXL._SX679_.jpg" alt="">
+                                    <h4 class="pt-20"><a href="https://www.amazon.in/Cello-Water-Plastic-Bottle-700ml/dp/B077Z9HCWH/ref=as_li_ss_tl?SubscriptionId=AKIAICFYHFJJNTT27K5A&amp&amp&amp&amp&amp&linkCode=sl1&tag=rkdeals04-21&linkId=c0469fef08f9f7702537641823f70d42&language=en_IN"><b>Cello Water Mate Plastic Bottle, 700ml, Red </b></a></h4>
+                                    <p>At rs 107 only </p>
+                                    </div><!-- col-sm-6 -->
+                            
+                            <div class="col-sm-6 grocery" style="display: none;">
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/61dDr%2BIbX%2BL._SX679_.jpg" alt="">
+                                    <h4 class="pt-20"><a href="https://www.amazon.in/Brylcreem-Face-Beard-Wash-100g/dp/B07D2KLJRJ/ref=as_li_ss_tl?SubscriptionId=AKIAICFYHFJJNTT27K5A&linkCode=sl1&tag=ss9716000c-21&linkId=5d9ea1eab67e5a0208be74f0c077ba46&language=en_IN"><b>Brylcreem Face and Beard Gel Wash, 100g
+                                    </b></a></h4>
+                                    <p>At rs 161 only</p> <br>
+                                    </div><!-- col-sm-6 -->
+                            
+                            <div class="col-sm-6 grocery" style="display: none;" >
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/61HRTdsSv1L._SX679_.jpg" alt="">
+                                    <h4 class="pt-20"><a href="https://www.amazon.in/Boroplus-Doodh-Kesar-Antiseptic-Lotion/dp/B07J4YDK75/ref=as_li_ss_tl?SubscriptionId=AKIAICFYHFJJNTT27K5A&linkCode=sl1&tag=ss9716000c-21&linkId=9b6d98a69987ffd4b0ec6ab4884af7f4&language=en_IN"><b>Boroplus Doodh Kesar Antiseptic Lotion, 300ml
+                                    </b></a></h4>
+                                    <p>At rs 103 only</p>
+                                    </div><!-- col-sm-6 -->
+                            
+                            <div class="col-sm-6 grocery" style="display: none;" >
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/81XF7i6EmUL._SY879_.jpg" alt="">
+                                    <h4 class="pt-20"><a href="https://www.amazon.in/Fair-Handsome-Advanced-Whitening-Benefit/dp/B071GC7VGX/ref=as_li_ss_tl?psc=1&SubscriptionId=AKIAICFYHFJJNTT27K5A&linkCode=sl1&tag=ss9716000c-21&linkId=33733856dc675866a4138b764ccc50b4&language=en_IN"><b>Fair and Handsome Laser 12 Advanced Whitening and Multi Benefit Cream, 60g
+                                    </b></a></h4>
+                                    <p>At rs 158 only<p> <br>
+                                    </div><!-- col-sm-6 -->
+                            
+                            <div class="col-sm-6 grocery" style="display: none;" >
+                                <br><br><br><br>
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/71CxBbJyQKL._SX679_.jpg" alt="">
+                                    <h4 class="pt-20"><a href="https://www.amazon.in/Cadbury-Bournvita-Chocolate-Health-Refill/dp/B00LIVC89G/ref=as_li_ss_tl?&linkCode=sl1&tag=ss9716000c-21&linkId=7db2f3536c708f8da32932a1e6f5c876&language=en_IN"><br><br><b>Cadbury Bournvita Chocolate Health Drink, 500 gm Refill Pack
+                                    </b></a></h4>
+                                    <p>At rs  198 only</p>
+                                    </div><!-- col-sm-6 -->
+                            
+                        </div><!-- row -->
+                        <div id="loadMore2" style="">
+                        <a href="#">Load More</a>
+                        </div>
+                        
+                        <!--<a class="dplay-block btn-brdr-primary mt-20 mb-md-50" href="#"><b>VIEW MORE CRYPTO MINING EVENTS</b></a>-->
+                    </div><!-- col-md-9 -->
+                    
+                    <div class="d-none d-md-block d-lg-none col-md-3"></div>
+                    <div class="col-md-6 col-lg-4">
+                        <div>
+                            <script type="text/javascript">amzn_assoc_ad_type ="responsive_search_widget"; amzn_assoc_tracking_id ="anuj139408-21"; amzn_assoc_marketplace ="amazon"; amzn_assoc_region ="IN"; amzn_assoc_placement =""; amzn_assoc_search_type = "search_widget";amzn_assoc_width ="auto"; amzn_assoc_height ="auto"; amzn_assoc_default_search_category =""; amzn_assoc_default_search_key ="";amzn_assoc_theme ="light"; amzn_assoc_bg_color ="FFFFFF"; </script><script src="//z-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1&Marketplace=IN"></script>
+                            <!--<img src="images/ads.jpg" alt="ads">-->
+                        </div>
+                        <div class="pl-20 pl-md-0">
+                            
+                            <div class="mtb-50">
+                                <h4 class="p-title"><b>POPULAR POSTS</b></h4>
+                                <a class="oflow-hidden pos-relative mb-20 dplay-block" href="https://amzn.to/2CmGveg">
+                                    <div class="wh-100x abs-tlr"><img src="https://images-na.ssl-images-amazon.com/images/I/718aNR2qITL._SX679_.jpg" alt=""></div>
+                                    <div class="ml-120 min-h-100x">
+                                        <h5><b>Parachute Advansed Coconut Crème Oil, 150 ml with Intense Nourishment Shampoo, 150 ml @175
+                                        </b></h5>
+                                        <h6 class="color-lite-black pt-10">by <span class="color-black"><b>Pro Looters,</b></span> Jan 20, 2019</h6>
+                                    </div>
+                                </a><!-- oflow-hidden -->
+                                
+                                <a class="oflow-hidden pos-relative mb-20 dplay-block" href="https://amzn.to/2RM2LYR">
+                                    <div class="wh-100x abs-tlr"><img src="https://images-na.ssl-images-amazon.com/images/I/816ykS4F3OL._UY550_.jpg" alt=""></div>
+                                    <div class="ml-120 min-h-100x">
+                                        <h5><b>Amazon Brand - Symbol Men's Checkered Regular Fit Formal Shirt
+                                            
+                                            @216</b></h5>
+                                        <h6 class="color-lite-black pt-10">by <span class="color-black"><b>Pro Looters,</b></span> Jan 16, 2019</h6>
+                                    </div>
+                                </a><!-- oflow-hidden -->
+                                
+                                <a class="oflow-hidden pos-relative mb-20 dplay-block" href="https://www.amazon.in/dp/B0764M9QVT/ref=as_li_ss_tl?=&linkCode=ll1&tag=parasbansal0b-21&linkId=55b67859a42ac77926ca552367fe23d2&language=en_IN">
+                                    <div class="wh-100x abs-tlr"><img src="https://images-na.ssl-images-amazon.com/images/I/71wdLqbjbsL._SX679_.jpg" alt=""></div>
+                                    <div class="ml-120 min-h-100x">
+                                        <h5><b>Pantene Silky Smooth Care Shampoo, 1L @300</b></h5>
+                                        <h6 class="color-lite-black pt-10">by <span class="color-black"><b>Pro Looters,</b></span> Jan 13, 2019</h6>
+                                    </div>
+                                </a><!-- oflow-hidden -->
+                                
+                                <a class="oflow-hidden pos-relative mb-20 dplay-block" href="https://www.amazon.in/Samsung-Navy-Blue-Storage-Offers/dp/B078WRWJ6P/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=indian007-21&linkId=69c7b9c1a52bd312045bdd40647270a3&language=en_IN">
+                                    <div class="wh-100x abs-tlr"><img src="https://images-na.ssl-images-amazon.com/images/I/61%2B0Np%2B16uL._SY741_.jpg" alt=""></div>
+                                    <div class="ml-120 min-h-100x">
+                                        <h5><b>Samsung C7 Pro (Navy Blue, 4GB RAM, 64GB Storage) with Offers
+                                            @19990</b></h5>
+                                        <h6 class="color-lite-black pt-10">by <span class="color-black"><b>Pro Looters,</b></span> Jan 13, 2019</h6>
+                                    </div>
+                                </a><!-- oflow-hidden -->
+                                
+                            </div><!-- mtb-50 -->
+                            
+                            <div class="mtb-50 pos-relative">
+                                <SCRIPT charset="utf-8" type="text/javascript" src="//ws-in.amazon-adsystem.com/widgets/q?rt=tf_mfw&ServiceVersion=20070822&MarketPlace=IN&ID=V20070822%2FIN%2Fanuj139408-21%2F8001%2Fa225c765-8df1-46c9-b5a9-08f1dae04d25"> </SCRIPT> <NOSCRIPT><A rel="nofollow" HREF="//ws-in.amazon-adsystem.com/widgets/q?rt=tf_mfw&ServiceVersion=20070822&MarketPlace=IN&ID=V20070822%2FIN%2Fanuj139408-21%2F8001%2Fa225c765-8df1-46c9-b5a9-08f1dae04d25&Operation=NoScript">Amazon.in Widgets</A></NOSCRIPT>
+                            </div><!-- mtb-50 -->
+                            
+                            <div class="mtb-50 mb-md-0">
+                                <h4 class="p-title"><b>NEWSLETTER</b></h4>
+                                <p class="mb-20">Subscribe to our newsletter to get notification about new updates,
+                                information, discount, etc..</p>
+                                <form class="nwsltr-primary-1">
+                                    <input type="text" placeholder="Your email"/>
+                                    <button type="submit"><i class="ion-ios-paperplane"></i></button>
+                                </form>
+                            </div><!-- mtb-50 -->
+                            
+                        </div><!--  pl-20 -->
+                    </div><!-- col-md-3 -->
+                    
+                </div><!-- row -->
+            </div><!-- container -->
+        </section>
+        
+        
+        <footer class="bg-191 color-ccc" id="foot">
+            
+            <div class="container">
+                <div class="pt-50 pb-20 pos-relative">
+                    <div class="abs-tblr pt-50 z--1 text-center">
+                        <div class="h-80 pos-relative"><img class="opacty-1 h-100 w-auto" src="images/map.png" alt=""></div>
+                    </div>
+                    <div class="row">
+                        
+                        <div class="col-sm-4">
+                            <div class="mb-30">
+                                <h3>Pro Looters</h3>
+                                <p class="mtb-20 color-ccc">We save your hard earned money. <br/>
+                                <p class="color-ash"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                </p>
+                            </div><!-- mb-30 -->
+                        </div><!-- col-md-4 -->
+                        
+                        <!--                    <div class="col-sm-4">-->
+                        <!--                        <div class="mb-30">-->
+                        <!--                            <h5 class="color-primary mb-20"><b>MOST POPULAR</b></h5>-->
+                        <!--                            <div class="mb-20">-->
+                        <!--                                <a class="color-white" href="#"><b>Its Make or Break Time for Bitcoin</b></a>-->
+                        <!--                                <h6 class="mt-10">Jan 25, 2018</h6>-->
+                        <!--                            </div>-->
+                        <!--                            <div class="brdr-ash-1 opacty-2 mr-30"></div>-->
+                        <!--                            <div class="mt-20">-->
+                        <!--                                <a class="color-white" href="#"><b>Bitcoin's roller coster ride is not over</b></a>-->
+                        <!--                                <h6 class="mt-10">Jan 25, 2018</h6>-->
+                        <!--                            </div>-->
+                        <!--                        </div><!-- mb-30 -->
+                        <!--                    </div><!-- col-md-4 -->
+                        <!--                    -->
+                        <!--                    <div class="col-sm-4">-->
+                        <!--                        <div class="mb-30">-->
+                        <!--                            <h5 class="color-primary mb-20"><b>MOST POPULAR</b></h5>-->
+                        <!--                            <div class="mb-20">-->
+                        <!--                                <a class="color-white" href="#"><b>Its Make or Break Time for Bitcoin</b></a>-->
+                        <!--                                <h6 class="mt-10">Jan 25, 2018</h6>-->
+                        <!--                            </div>-->
+                        <!--                            <div class="brdr-ash-1 opacty-2 mr-30"></div>-->
+                        <!--                            <div class="mt-20">-->
+                        <!--                                <a class="color-white" href="#"><b>Bitcoin's roller coster ride is not over</b></a>-->
+                        <!--                                <h6 class="mt-10">Jan 25, 2018</h6>-->
+                        <!--                            </div>-->
+                        <!--                        </div><!-- mb-30 -->
+                        <!--                    </div><!-- col-md-4 -->
+                        
+                    </div><!-- row -->
+                </div><!-- ptb-50 -->
+                
+                <div class="brdr-ash-1 opacty-2"></div>
+                
+                <div class="oflow-hidden color-ash font-9 text-sm-center ptb-sm-5">
+                    
+                    <ul class="float-left float-sm-none list-a-plr-10 list-a-plr-sm-5 list-a-ptb-15 list-a-ptb-sm-10">
+                        <li><a class="pl-0 pl-sm-10" href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#foot">Contact us</a></li>
+                            </ul>
+                            <ul class="float-right float-sm-none list-a-plr-10 list-a-plr-sm-5 list-a-ptb-15 list-a-ptb-sm-5">
+                            <li><a class="pl-0 pl-sm-10" href="#"><i class="ion-social-facebook"></i></a></li>
+                            <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                            <li><a href="#"><i class="ion-social-google"></i></a></li>
+                            <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                            <li><a href="#"><i class="ion-social-bitcoin"></i></a></li>
+                            </ul>
+                            
+                            </div><!-- oflow-hidden -->
+                            </div><!-- container -->
+                            </footer>
+                            
+                            <!-- SCIPTS -->
+                            
+                            <script src="{% static 'proapp/plugins/jquery-3.2.1.min.js' %}"></script>
+                            
+                            <script src="{% static 'proapp/plugins/tether.min.js' %}"></script>
+                            
+                            <script src="{% static 'proapp/plugins/bootstrap.js' %}"></script>
+                            
+                            <script src="{% static 'proapp/scripts.js' %}"></script>
+                            <script src = "{% static 'proapp/load-more-button.js'  %}"> </script>
+                            <script src = "{% static 'proapp/load-more-grocery.js'  %}"> </script>
+                            <script type='text/javascript'>
+                            var pubID = '48222CL43503';
+                            
+                            (function(d, t) {
+                            var s = document.createElement('script');s.type = 'text/javascript';
+                            s.async = true;s.src = (document.location.protocol == 'https:' ? 'https://cdn0.cuelinks.com/js/' : 'http://cdn0.cuelinks.com/js/')  + 'cuelinksv1.js';
+                            document.getElementsByTagName('body')[0].appendChild(s);
+                            }());
+                            </script>
+                            
+                            
+    </body>
+</html>

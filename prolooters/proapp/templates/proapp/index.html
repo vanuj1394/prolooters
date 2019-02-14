@@ -4,20 +4,13 @@
 <!DOCTYPE HTML>
 <html lang="en">
     <head>
-    <!-- {% for pro in prod %}
-
-       <h8> {{pro.title}} </h8> <br>
-    {% endfor %} -->
-    <!-- {% for iteam in prod %}
-    <li><h1>{{iteam.title}}</h1></li>
-    {% endfor %} -->
         <title>Pro Looters</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1">
                 <meta charset="UTF-8">
                     
                     <!-- Font -->
-                    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:400,600,700" rel="stylesheet">
+                    <link href="{% static 'https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:400,600,700' %}" rel="stylesheet">
                         
                         <!-- Stylesheets -->
                         
@@ -105,12 +98,12 @@
                                     
                                 </div>
                                 <div class="container">
-                                        <a href="{{pro.buy_link}}">{{pro.title}}
+                                        <a href="/proapp/{{pro.id}}/">{{pro.title}}
                                         <div class="product-price u-textLeft  padding-horizontal-1x ">
                                            <h4><b> <span class="product-price--value"><span class="sup">₹</span>{{pro.deal_price}}</span></b></h4>
                                         </div>
                                         
-                                    </div>
+                                    </div><br>
                             </div>
                         {% endfor %}
 

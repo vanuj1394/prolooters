@@ -18,4 +18,5 @@ from .import views
 
 urlpatterns = [
         url(r'^$',views.index, name="index"),
+        url(r'^(?P<product_iteam_id>[0-9]+)/$',views.second , name = "second"),
 ]

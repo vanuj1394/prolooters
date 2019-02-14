@@ -9,9 +9,9 @@ from .scrapper import parsor
 def index(request):
 	pars = parsor()
 	pars.AmzonParser()
-	product = product_iteam.objects.all()
+	product = product_iteam.objects.all().order_by('-date')
 	context = {
-	 	'prod': product.values('title'),
+	 	'prod': product,
 	 }
 	return render(request, 'proapp/index.html',context)
 	# product.title = 'trimmer'
@@ -29,3 +29,11 @@ def index(request):
 	# product = product_iteam.objects.all()
 	# product = product_iteam(title = "" , buy_link ="" , img_src="" , deal_price="")
 	
+def second(request,product_iteam_id):
+    product = product_iteam.objects.filter(id = product_iteam_id)
+    context = {
+        'prod' : product
+    }
+    return render(request, 'proapp/second.html',context)
+
+

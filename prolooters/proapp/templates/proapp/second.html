@@ -1,0 +1,223 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>ProLooters</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+<!--Less styles -->
+   <!-- Other Less css file //different less files has different color scheam
+	<link rel="stylesheet/less" type="text/css" href="themes/less/simplex.less">
+	<link rel="stylesheet/less" type="text/css" href="themes/less/classified.less">
+	<link rel="stylesheet/less" type="text/css" href="themes/less/amelia.less">  MOVE DOWN TO activate
+	-->
+	<!--<link rel="stylesheet/less" type="text/css" href="themes/less/bootshop.less">
+	<script src="themes/js/less.js" type="text/javascript"></script> -->
+
+<!--<link href="{% static 'proapp/plugins/bootstrap.css' %}" rel="stylesheet">-->
+
+                            <link href="fonts/ionicons.css" rel="stylesheet">
+
+                                <link href ="{% static 'proapp/plugins/load-more-button.css' %}" rel="stylesheet">
+                                <link href="{% static 'proapp/styles.css' %}" rel="stylesheet">
+                                    <style type="text/css">
+                                        .control-label{color:green;}
+                                        .card .card-img{width: 100%;}
+                                        .card .card-img img{width: 100%; object-fit: cover;}
+                                        .mt-25{margin-top: 25px;}
+                                        </style>
+       <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:400,600,700" rel="stylesheet">
+
+<!-- Bootstrap style -->
+    <link id="callCss" rel="stylesheet" href="{% static 'proapp/plugins/bootstrap.min.css' %}" media="screen"/>
+    <link href="{% static 'proapp/plugins/base.css' %}" rel="stylesheet" media="screen"/>
+      <link href="fonts/ionicons.css" rel="stylesheet">
+
+<!-- Bootstrap style responsive -->
+	<link href="{% static 'proapp/plugins/bootstrap-responsive.min.css' %}" rel="stylesheet"/>
+	<link href="{% static 'proapp/plugins/font-awesome.css' %}" rel="stylesheet" type="text/css">
+<!-- Google-code-prettify -->
+	<link href="{% static 'proapp/plugins/prettify.css' %}" rel="stylesheet"/>
+<!-- fav and touch icons -->
+    <link rel="shortcut icon" href="themes/images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="themes/images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="themes/images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="themes/images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="themes/images/ico/apple-touch-icon-57-precomposed.png">
+	<style type="text/css" id="enject"></style>
+  </head>
+<body>
+<!-- Navbar ================================================== -->
+ <header>
+            <div class="bg-191">
+                <div class="container">
+                    <div class="oflow-hidden color-ash font-9 text-sm-center ptb-sm-5">
+
+                        <ul class="float-left float-sm-none list-a-plr-10 list-a-plr-sm-5 list-a-ptb-15 list-a-ptb-sm-10">
+                            <li><a class="pl-0 pl-sm-10" href="#foot">About</a></li>
+                            <li><a href="#foot">Contact</a></li>
+                        </ul>
+                        <ul class="float-right float-sm-none list-a-plr-10 list-a-plr-sm-5 list-a-ptb-15 list-a-ptb-sm-5">
+                            <li><a class="pl-0 pl-sm-10" href="#"><i class="ion-social-facebook"></i></a></li>
+                            <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                            <li><a href="#"><i class="ion-social-google"></i></a></li>
+                            <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                            <li><a href="#"><i class="ion-social-bitcoin"></i></a></li>
+                        </ul>
+
+                    </div><!-- top-menu -->
+                </div><!-- container -->
+            </div><!-- bg-191 -->
+
+            <div class="container">
+                <a class="logo" href="index.html"><h1>Pro Looters</h1><hr></a>
+
+                <a class="right-area src-btn" href="#" >
+                    <i class="active src-icn ion-search"></i>
+                    <i class="close-icn ion-close"></i>
+                </a>
+                <div class="src-form">
+                    <form>
+                        <input type="text" placeholder="Search here">
+                            <button type="submit"><i class="ion-search"></i></a></button>
+                            </form>
+                </div><!-- src-form -->
+
+                <a class="menu-nav-icon" data-menu="#main-menu" href="#"><i class="ion-navicon"></i></a>
+
+                <ul class="main-menu" id="main-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="drop-down"><a href="03_single-post.html">Mobiles<i class="ion-arrow-down-b"></i></a>
+                        <ul class="drop-down-menu drop-down-inner">
+                            <li><a href="https://www.amazon.in/s/ref=nb_sb_noss?url=search-alias%3Delectronics&field-keywords=mobile&rh=n%3A976419031%2Ck%3Amobile">All Mobiles</a></li>
+                            <li><a href="https://www.amazon.in/b/?_encoding=UTF8&node=1389401031&ref_=sv_top_elec_mega_1">Mobile Accessories</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://www.amazon.in/s/ref=nb_sb_noss_2?url=search-alias%3Dcomputers&field-keywords=Computer">Computers</a></li>
+                    <li><a href="https://www.amazon.in/s/ref=nb_sb_noss_2?url=search-alias%3Dcomputers&field-keywords=Laptops&rh=n%3A976392031%2Ck%3ALaptops">Laptops</a></li>
+                    <li><a href="https://www.amazon.in/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=Mens&rh=i%3Aaps%2Ck%3AMens">Mens</a></li>
+                </ul>
+                <div class="clearfix"></div>
+            </div><!-- container -->
+ </header>
+
+<!-- Header End====================================================================== -->
+<div id="mainBody">
+	<div class="container">
+	<div class="row">
+<!-- Sidebar ================================================== -->
+	<div id="sidebar" class="span3">
+		<ul id="sideManu" class="nav nav-tabs nav-stacked">
+			<li class="subMenu open"><a> ELECTRONICS [230]</a>
+				<ul>
+				<li><a class="active" href="https://www.amazon.in/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=camera"><i class="icon-chevron-right"></i>Cameras (100) </a></li>
+				<li><a href="https://www.amazon.in/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=computers&rh=i%3Aaps%2Ck%3Acomputers&ajr=0"><i class="icon-chevron-right"></i>Computers, Tablets & laptop (30)</a></li>
+				<li><a href="https://www.amazon.in/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=mobile+phones&rh=i%3Aaps%2Ck%3Amobile+phones&ajr=0"><i class="icon-chevron-right"></i>Mobile Phone (80)</a></li>
+				<li><a href="https://www.amazon.in/s/ref=nb_sb_noss?url=node%3D1389401031&field-keywords=sound"><i class="icon-chevron-right"></i>Sound & Vision (15)</a></li>
+				</ul>
+			</li>
+			<li class="subMenu"><a> CLOTHES [840] </a>
+			<ul style="display:none">
+				<li><a href="https://www.amazon.in/s/ref=nb_sb_noss?url=search-alias%3Dapparel&field-keywords=women+&rh=n%3A1571271031%2Ck%3Awomen+"><i class="icon-chevron-right"></i>Women's Clothing (45)</a></li>
+				<li><a href="https://www.amazon.in/s/ref=nb_sb_noss?url=search-alias%3Dapparel&field-keywords=women+shoes&rh=n%3A1571271031%2Ck%3Awomen+shoes"><i class="icon-chevron-right"></i>Women's Shoes (8)</a></li>
+				<li><a href="https://www.amazon.in/s/ref=nb_sb_noss?url=search-alias%3Dapparel&field-keywords=women+hanfbags&rh=n%3A1571271031%2Ck%3Awomen+hanfbags"><i class="icon-chevron-right"></i>Women's Hand Bags (5)</a></li>
+				<li><a href="https://www.amazon.in/s/ref=nb_sb_noss_2?url=search-alias%3Dapparel&field-keywords=mens+clothing&rh=n%3A1571271031%2Ck%3Amens+clothing"><i class="icon-chevron-right"></i>Men's Clothings  (45)</a></li>
+				<li><a href="https://www.amazon.in/s/ref=nb_sb_noss?url=search-alias%3Dapparel&field-keywords=mens+cshoes&rh=n%3A1571271031%2Ck%3Amens+cshoes"><i class="icon-chevron-right"></i>Men's Shoes (6)</a></li>
+				<li><a href="https://www.amazon.in/s/ref=nb_sb_ss_i_1_4?url=search-alias%3Dapparel&field-keywords=kids+clothing+for+boys&sprefix=kids%2Cundefined%2C770&crid=1VO7OP63WF5PT&rh=n%3A1571271031%2Ck%3Akids+clothing+for+boys"><i class="icon-chevron-right"></i>Kids Clothing (5)</a></li>
+				<li><a href="https://www.amazon.in/s/ref=nb_sb_noss_2?url=search-alias%3Dapparel&field-keywords=kids+shoe&rh=n%3A1571271031%2Ck%3Akids+shoe"><i class="icon-chevron-right"></i>Kids Shoes (3)</a></li>
+			</ul>
+			</li>
+			<li><a href="https://www.amazon.in/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=beauty&rh=i%3Aaps%2Ck%3Abeauty&ajr=0">HEALTH & BEAUTY [18]</a></li>
+			<li><a href="https://www.amazon.in/s/ref=nb_sb_ss_i_1_10?url=search-alias%3Daps&field-keywords=sports+accessories+for+men&sprefix=sports+acc%2Caps%2C309&crid=1SYV2KZUYDQV8&rh=i%3Aaps%2Ck%3Asports+accessories+for+men&ajr=0">SPORTS & LEISURE [58]</a></li>
+			<li><a href="https://www.amazon.in/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=books&rh=i%3Aaps%2Ck%3Abooks&ajr=0">BOOKS & ENTERTAINMENTS [14]</a></li>
+		</ul>
+		<br/>
+			<div class="thumbnail">
+				<img src="https://cdn3.iconfinder.com/data/iconsets/previews/medium-2x/payment-method.png" title="Bootshop Payment Methods" alt="Payments Methods">
+				<div class="caption">
+				  <h5>Payment Methods</h5>
+				</div>
+			  </div>
+	</div>
+<!-- Sidebar end=============================================== -->
+	<div class="span9">
+    <ul class="breadcrumb">
+    <li><a href="#">Home</a> <span class="divider">/</span></li>
+    <li><a href="index.html">Products</a> <span class="divider">/</span></li>
+    <li class="active">product Details</li>
+    </ul>
+	<div class="row">
+			<div id="gallery" class="span3">
+            <a href="themes/images/products/large/f1.jpg" title="Fujifilm FinePix S2950 Digital Camera">
+				<img src="{{prod.values.first.img_src}}" style="width:100%" alt="Fujifilm FinePix S2950 Digital Camera"/>
+            </a>
+			</div>
+			<div class="span6">
+				<h3>{{prod.values.first.title}} </h3>
+				<!--<small>- (14MP, 18x Optical Zoom) 3-inch LCD</small> -->
+				<hr class="soft"/>
+				<form class="form-horizontal qtyFrm">
+				  <div class="control-group">
+                      <label class="control-label"><span><b>$ </b>{{prod.values.first.deal_price}}</span></label>
+					<div class="controls">
+                        <a href="{{prod.values.first.buy_link}}" class="btn btn-large btn-primary pull-right"> Buy Now</a>
+					</div>
+				  </div>
+				</form>
+
+				<hr class="soft"/>
+				<h4>Limited items in stock</h4>
+
+
+
+			</div>
+
+
+</div>
+</div> </div>
+</div>
+<!-- MainBody End ============================= -->
+<!-- Footer ================================================================== -->
+	<div  id="footerSection">
+	<div class="container">
+		<div class="row">
+			<div class="span3">
+				<h5>INFORMATION</h5>
+				<a href="contact.html">CONTACT</a>
+				<a href="register.html">REGISTRATION</a>
+				<a href="legal_notice.html">LEGAL NOTICE</a>
+				<a href="tac.html">TERMS AND CONDITIONS</a>
+				<a href="faq.html">FAQ</a>
+			 </div>
+			<div class="span3">
+				<h5>OUR OFFERS</h5>
+				<a href="#">NEW PRODUCTS</a>
+				<a href="#">TOP SELLERS</a>
+				<a href="special_offer.html">SPECIAL OFFERS</a>
+				<a href="#">MANUFACTURERS</a>
+				<a href="#">SUPPLIERS</a>
+			 </div>
+			<div id="socialMedia" class="span3 pull-right">
+				<h5>SOCIAL MEDIA </h5>
+				<a href="#"><img width="60" height="60" src="themes/images/facebook.png" title="facebook" alt="facebook"/></a>
+				<a href="#"><img width="60" height="60" src="themes/images/twitter.png" title="twitter" alt="twitter"/></a>
+				<a href="#"><img width="60" height="60" src="themes/images/youtube.png" title="youtube" alt="youtube"/></a>
+			 </div>
+		 </div>
+
+	</div><!-- Container End -->
+	</div>
+<!-- Placed at the end of the document so the pages load faster ============================================= -->
+	<script src="{% static 'proapp/plugins/jquery.js' %}" type="text/javascript"></script>
+	<script src="{% static 'proapp/plugins/bootstrap.min.js' %}" type="text/javascript"></script>
+	<script src="{% static 'proapp/plugins/prettify.js' %}"></script>
+
+	<script src="{% static 'proapp/plugins/bootshop.js' %}"></script>
+    <script src="{% static 'proapp/plugins/jquery.lightbox-0.5.js' %}"></script>
+
+	<!-- Themes switcher section ============================================================================================= -->
+
+</body>
+</html>

@@ -54,4 +54,4 @@ class parsor():
      
      
     # if __name__ == "__main__":
-    #     AmzonParser()
+    #      AmzonParser()

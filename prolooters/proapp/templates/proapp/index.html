@@ -4,17 +4,20 @@
 <!DOCTYPE HTML>
 <html lang="en">
     <head>
+<<<<<<< HEAD
 
     <!-- {% for iteam in prod %}
     <li><h1>{{iteam.title}}</h1></li>
     {% endfor %} -->
+=======
+>>>>>>> development
         <title>Pro Looters</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1">
                 <meta charset="UTF-8">
                     
                     <!-- Font -->
-                    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:400,600,700" rel="stylesheet">
+                    <link href="{% static 'https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:400,600,700' %}" rel="stylesheet">
                         
                         <!-- Stylesheets -->
                         
@@ -93,6 +96,7 @@
                     <div class="col-md-12 col-lg-8">
                         <h4 class="p-title"><b>RECENT DEALS</b></h4>
                         <div class="row">
+<<<<<<< HEAD
                             {% for pro in prod %}
                                 <div class="col-sm-3">
                                     <div class="card">
@@ -100,6 +104,48 @@
                                             <img src="{{pro.img_src}}" alt="Avatar">
                                                 </div>
 
+=======
+                        {% for pro in prod|slice:":100" %}
+                            <div class="col-sm-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src= "{{pro.img_src}}" alt="Avatar">
+                                            </div>
+                                    
+                                </div>
+                                <div class="container">
+                                        <a href="/proapp/{{pro.id}}/">{{pro.title}}
+                                        <div class="product-price u-textLeft  padding-horizontal-1x ">
+                                           <h4><b> <span class="product-price--value"><span class="sup">₹</span>{{pro.deal_price}}</span></b></h4>
+                                        </div>
+                                        
+                                    </div><br>
+                            </div>
+                        {% endfor %}
+
+
+                            <div class="col-sm-3 grid">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="https://images-na.ssl-images-amazon.com/images/I/71HOGcYFrDL._SX679_.jpg" alt="Avatar">
+                                            </div>
+                                    <div class="container">
+                                        <a href="https://amzn.to/2VZ4QzI"><h4><b>Lifelong Power Pro 500-Watt Mixer Grinder with 3 Jars (White/Grey)  </b></h4></a>
+                                        <h3><p>@999</p></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-25 grid" style="display: none;" >
+                            <div class="col-sm-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="https://images-eu.ssl-images-amazon.com/images/I/41ANVAHA0oL._AC_UL260_SR200,260_FMwebp_QL70_.jpg" alt="Avatar">
+                                            </div>
+                                    <div class="container">
+                                        <a href="https://www.amazon.in/s/ref=as_li_ss_tl?fst=as:off&rh=n:1571283031,n:!1571284031,n:1983396031,n:1983518031,n:9780814031,p_89:Vans&qid=1546872732&bbn=9780814031&sort=price-asc-rank&linkCode=sl2&tag=ss9716000c-21&linkId=0d5f2eebdd64082ae102a98d3cfb9233&language=en_IN"><h4><b>Vans Sneaker</b></h4></a>
+                                        <p>At 85% discount</p>
+>>>>>>> development
                                     </div>
                                     <div class="container">
                                             <a href="{{pro.buy_link}}">{{pro.title}}</a>
@@ -213,57 +259,18 @@
                             
                             <div class="mtb-50">
                                 <h4 class="p-title"><b>POPULAR POSTS</b></h4>
-                                <a class="oflow-hidden pos-relative mb-20 dplay-block" href="https://amzn.to/2CmGveg">
-                                    <div class="wh-100x abs-tlr"><img src="https://images-na.ssl-images-amazon.com/images/I/718aNR2qITL._SX679_.jpg" alt=""></div>
+                                {% for pro in prod|slice:":5" %} -->
+                                <a class="oflow-hidden pos-relative mb-20 dplay-block" href="{{pro.buy_link}}">
+                                    <div class="wh-100x abs-tlr"><img src="{{pro.img_src}}" alt=""></div>
                                     <div class="ml-120 min-h-100x">
-                                        <h5><b>Parachute Advansed Coconut Crème Oil, 150 ml with Intense Nourishment Shampoo, 150 ml @175
+                                        <h5><b>{{pro.title}}
                                         </b></h5>
                                         <h6 class="color-lite-black pt-10">by <span class="color-black"><b>Pro Looters,</b></span> Jan 20, 2019</h6>
                                     </div>
                                 </a><!-- oflow-hidden -->
+                                {% endfor %} -->
                                 
-                                <a class="oflow-hidden pos-relative mb-20 dplay-block" href="https://amzn.to/2RM2LYR">
-                                    <div class="wh-100x abs-tlr"><img src="https://images-na.ssl-images-amazon.com/images/I/816ykS4F3OL._UY550_.jpg" alt=""></div>
-                                    <div class="ml-120 min-h-100x">
-                                        <h5><b>Amazon Brand - Symbol Men's Checkered Regular Fit Formal Shirt
-                                            
-                                            @216</b></h5>
-                                        <h6 class="color-lite-black pt-10">by <span class="color-black"><b>Pro Looters,</b></span> Jan 16, 2019</h6>
-                                    </div>
-                                </a><!-- oflow-hidden -->
-                                
-                                <a class="oflow-hidden pos-relative mb-20 dplay-block" href="https://www.amazon.in/dp/B0764M9QVT/ref=as_li_ss_tl?=&linkCode=ll1&tag=parasbansal0b-21&linkId=55b67859a42ac77926ca552367fe23d2&language=en_IN">
-                                    <div class="wh-100x abs-tlr"><img src="https://images-na.ssl-images-amazon.com/images/I/71wdLqbjbsL._SX679_.jpg" alt=""></div>
-                                    <div class="ml-120 min-h-100x">
-                                        <h5><b>Pantene Silky Smooth Care Shampoo, 1L @300</b></h5>
-                                        <h6 class="color-lite-black pt-10">by <span class="color-black"><b>Pro Looters,</b></span> Jan 13, 2019</h6>
-                                    </div>
-                                </a><!-- oflow-hidden -->
-                                
-                                <a class="oflow-hidden pos-relative mb-20 dplay-block" href="https://www.amazon.in/Samsung-Navy-Blue-Storage-Offers/dp/B078WRWJ6P/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=indian007-21&linkId=69c7b9c1a52bd312045bdd40647270a3&language=en_IN">
-                                    <div class="wh-100x abs-tlr"><img src="https://images-na.ssl-images-amazon.com/images/I/61%2B0Np%2B16uL._SY741_.jpg" alt=""></div>
-                                    <div class="ml-120 min-h-100x">
-                                        <h5><b>Samsung C7 Pro (Navy Blue, 4GB RAM, 64GB Storage) with Offers
-                                            @19990</b></h5>
-                                        <h6 class="color-lite-black pt-10">by <span class="color-black"><b>Pro Looters,</b></span> Jan 13, 2019</h6>
-                                    </div>
-                                </a><!-- oflow-hidden -->
-                                
-                            </div><!-- mtb-50 -->
-                            
-                            <div class="mtb-50 pos-relative">
-                                <SCRIPT charset="utf-8" type="text/javascript" src="//ws-in.amazon-adsystem.com/widgets/q?rt=tf_mfw&ServiceVersion=20070822&MarketPlace=IN&ID=V20070822%2FIN%2Fanuj139408-21%2F8001%2Fa225c765-8df1-46c9-b5a9-08f1dae04d25"> </SCRIPT> <NOSCRIPT><A rel="nofollow" HREF="//ws-in.amazon-adsystem.com/widgets/q?rt=tf_mfw&ServiceVersion=20070822&MarketPlace=IN&ID=V20070822%2FIN%2Fanuj139408-21%2F8001%2Fa225c765-8df1-46c9-b5a9-08f1dae04d25&Operation=NoScript">Amazon.in Widgets</A></NOSCRIPT>
-                            </div><!-- mtb-50 -->
-                            
-                            <div class="mtb-50 mb-md-0">
-                                <h4 class="p-title"><b>NEWSLETTER</b></h4>
-                                <p class="mb-20">Subscribe to our newsletter to get notification about new updates,
-                                information, discount, etc..</p>
-                                <form class="nwsltr-primary-1">
-                                    <input type="text" placeholder="Your email"/>
-                                    <button type="submit"><i class="ion-ios-paperplane"></i></button>
-                                </form>
-                            </div><!-- mtb-50 -->
+                                <!-- mtb-50 -->
                             
                         </div><!--  pl-20 -->
                     </div><!-- col-md-3 -->
